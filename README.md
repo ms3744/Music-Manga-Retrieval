@@ -1,6 +1,6 @@
-# AudioCLIP
+# Extending AudioCLIP
+<!---
 ## Extending [CLIP](https://github.com/openai/CLIP) to Image, Text and Audio
-
 ![Overview of AudioCLIP](images/AudioCLIP-Structure.png)
 
 This repository contains implementation of the models described in the paper [arXiv:2106.13043](https://arxiv.org/abs/2106.13043).
@@ -67,3 +67,4 @@ The required Python version is >= 3.7.
       primaryClass={cs.SD}
 }
 ```
+---!>
