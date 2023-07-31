@@ -1,4 +1,45 @@
 # Extending AudioCLIP
+
+### Top-3 music moods retrieved for each genre
+
+| Genres              | Moods          | Confidence |
+|---------------------|----------------|------------|
+| animal              | Tender music   | 0.051540   |
+| animal              | Exciting music | 0.045224   |
+| animal              | Funny music    | 0.026361   |
+| science fiction     | Tender music   | 0.065807   |
+| science fiction     | Exciting music | 0.064444   |
+| science fiction     | Sad music      | 0.031630   |
+| romantic comedy     | Angry music    | 0.076243   |
+| romantic comedy     | Exciting music | 0.046481   |
+| romantic comedy     | Funny music    | 0.043221   |
+| horror              | Exciting music | 0.078913   |
+| horror              | Angry music    | 0.073140   |
+| horror              | Sad music      | 0.068514   |
+| historical drama    | Sad music      | 0.156446   |
+| historical drama    | Tender music   | 0.087837   |
+| historical drama    | Exciting music | 0.062480   |
+| fantasy             | Scary music    | 0.094619   |
+| fantasy             | Exciting music | 0.054593   |
+| fantasy             | Tender music   | 0.042985   |
+| battle              | Funny music    | 0.085966   |
+| battle              | Scary music    | 0.074422   |
+| battle              | Sad music      | 0.069531   |
+| four-frame cartoons | Scary music    | 0.052664   |
+| four-frame cartoons | Happy music    | 0.048357   |
+| four-frame cartoons | Tender music   | 0.028926   |
+| suspense            | Angry music    | 0.061149   |
+| suspense            | Exciting music | 0.046962   |
+| suspense            | Scary music    | 0.034645   |
+| love romance        | Happy music    | 0.112550   |
+| love romance        | Funny music    | 0.107358   |
+| love romance        | Tender music   | 0.047560   |
+| humor               | Angry music    | 0.096158   |
+| humor               | Scary music    | 0.095378   |
+| humor               | Happy music    | 0.043808   |
+| sports              | Tender music   | 0.014007   |
+| sports              | Sad music      | 0.010940   |
+| sports              | Exciting music | 0.009933   |
 <!---
 ## Extending [CLIP](https://github.com/openai/CLIP) to Image, Text and Audio
 ![Overview of AudioCLIP](images/AudioCLIP-Structure.png)
