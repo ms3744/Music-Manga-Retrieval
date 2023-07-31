@@ -6,6 +6,8 @@ Examples of different Genres for Manga. All examples are taken from the [Manga10
 Examples of different Moods for Music. All examples are taken from [AudioSet](https://research.google.com/audioset/ontology/music_mood_1.html)
 ![audioexamples](https://github.com/ms3744/Music-Manga-Retrieval/assets/55681191/4d67d5de-b5ae-483e-a525-d8f30659473c)
 
+The weights of the trained model can be downloaded [here](https://drive.google.com/file/d/1oD0RhvdRz_c5tmUYLjn27RULpH4-VMES/view?usp=sharing)
+
 ## Additional Results from Original [AudioClip](https://github.com/AndreyGuzhov/AudioCLIP)
 ### Top-3 music moods retrieved for each genre
 
