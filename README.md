@@ -1,5 +1,12 @@
-# Extending AudioCLIP
+# Extending AudioCLIP for Manga to Music Retrieval
 
+Examples of different Genres for Manga. All examples are taken from the [Manga109 dataset](http://www.manga109.org/en/)
+![mangaexamples](https://github.com/ms3744/Music-Manga-Retrieval/assets/55681191/454faab8-ae8d-4708-9bd8-d1d6cb2fca21)
+
+Examples of different Moods for Music. All examples are taken from [AudioSet](https://research.google.com/audioset/ontology/music_mood_1.html)
+![audioexamples](https://github.com/ms3744/Music-Manga-Retrieval/assets/55681191/4d67d5de-b5ae-483e-a525-d8f30659473c)
+
+## Additional Results from Original [AudioClip](https://github.com/AndreyGuzhov/AudioCLIP)
 ### Top-3 music moods retrieved for each genre
 
 | Genres              | Moods          | Confidence |
@@ -40,6 +47,100 @@
 | sports              | Tender music   | 0.014007   |
 | sports              | Sad music      | 0.010940   |
 | sports              | Exciting music | 0.009933   |
+
+### Top-3 manga genre retrieved for each mood
+
+| Moods          | Genres           | Confidence |
+|----------------|------------------|------------|
+| Angry music    | romantic comedy  | 0.728035   |
+| Angry music    | sports           | 0.124286   |
+| Angry music    | science fiction  | 0.120878   |
+| Exciting music | romantic comedy  | 0.363899   |
+| Exciting music | fantasy          | 0.131409   |
+| Exciting music | sports           | 0.118847   |
+| Funny music    | romantic comedy  | 0.791714   |
+| Funny music    | historical drama | 0.139742   |
+| Funny music    | science fiction  | 0.106413   |
+| Happy music    | romantic comedy  | 0.363568   |
+| Happy music    | sports           | 0.224703   |
+| Happy music    | humor            | 0.117644   |
+| Sad music      | romantic comedy  | 0.264380   |
+| Sad music      | suspense         | 0.120329   |
+| Sad music      | science fiction  | 0.109156   |
+| Scary music    | romantic comedy  | 0.266529   |
+| Scary music    | humor            | 0.124862   |
+| Scary music    | love romance     | 0.094527   |
+| Tender music   | romantic comedy  | 0.463236   |
+| Tender music   | sports           | 0.130724   |
+| Tender music   | humor            | 0.113780   |
+
+## Additional Results from Finetuned AudioCLIP
+### Top-3 music moods retrieved for each genre
+Interesting results are bolded
+| Genres                  | Moods              | Confidence |
+|-------------------------|--------------------|------------|
+| four-frame cartoons     | Tender music       | 0.412511   |
+| **four-frame cartoons** | **Funny music**    | 0.309540   |
+| four-frame cartoons     | Exciting music     | 0.265598   |
+| humor                   | Tender music       | 0.388559   |
+| **humor**               | **Sad music**      | 0.327623   |
+| humor                   | Angry music        | 0.322831   |
+| fantasy                 | Sad music          | 0.347311   |
+| fantasy                 | Angry music        | 0.302946   |
+| fantasy                 | Tender music       | 0.244032   |
+| **horror**              | **Tender music**   | 0.196129   |
+| horror                  | Sad music          | 0.168457   |
+| horror                  | Exciting music     | 0.021513   |
+| science fiction         | Sad music          | 0.290598   |
+| science fiction         | Scary music        | 0.277404   |
+| science fiction         | Happy music        | 0.229074   |
+| historical drama        | Sad music          | 0.540258   |
+| historical drama        | Tender music       | 0.450127   |
+| historical drama        | Angry music        | 0.387519   |
+| **battle**              | **Funny music**    | 0.322865   |
+| **battle**              | **Scary music**    | 0.281813   |
+| **battle**              | **Exciting music** | 0.222224   |
+| **sports**              | **Angry music**    | 0.656412   |
+| **sports**              | **Funny music**    | 0.561939   |
+| **sports**              | **Scary music**    | 0.442623   |
+| animal                  | Scary music        | 0.226972   |
+| animal                  | Sad music          | 0.200410   |
+| animal                  | Exciting music     | 0.156124   |
+| **love romance**        | **Exciting music** | 0.210068   |
+| love romance            | Scary music        | 0.192421   |
+| love romance            | Tender music       | 0.134343   |
+| **suspense**            | **Scary music**    | 0.344444   |
+| suspense                | Tender music       | 0.203390   |
+| suspense                | Sad music          | 0.172662   |
+| **romantic comedy**     | **Happy music**    | 0.373010   |
+| **romantic comedy**     | **Funny music**    | 0.315195   |
+| **romantic comedy**     | **Exciting music** | 0.309304   |
+### Top-3 manga genre retrieved for each mood
+Interesting results are bolded
+
+| Moods              | Genres                  | Confidence |
+|--------------------|-------------------------|------------|
+| **Angry music**    | **animal**              | 0.969437   |
+| Angry music        | humor                   | 0.349418   |
+| Angry music        | romantic comedy         | 0.331232   |
+| **Exciting music** | **historical drama**    | 0.390775   |
+| Exciting music     | love romance            | 0.378132   |
+| Exciting music     | suspense                | 0.349100   |
+| **Funny music**    | **four-frame cartoons** | 0.700495   |
+| Funny music        | historical drama        | 0.370268   |
+| Funny music        | science fiction         | 0.312229   |
+| **Happy music**    | **animal**              | 0.755317   |
+| Happy music        | historical drama        | 0.427652   |
+| Happy music        | four-frame cartoons     | 0.255897   |
+| **Sad music**      | **horror**              | 0.479025   |
+| Sad music          | animal                  | 0.471991   |
+| Sad music          | science fiction         | 0.433139   |
+| **Scary music**    | **animal**              | 0.454435   |
+| **Scary music**    | **romantic comedy**     | 0.351253   |
+| Scary music        | science fiction         | 0.328053   |
+| **Tender music**   | **animal**              | 0.622657   |
+| Tender music       | four-frame cartoons     | 0.449074   |
+| Tender music       | horror                  | 0.397024   |
 <!---
 ## Extending [CLIP](https://github.com/openai/CLIP) to Image, Text and Audio
 ![Overview of AudioCLIP](images/AudioCLIP-Structure.png)
