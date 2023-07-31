@@ -141,6 +141,18 @@ Interesting results are bolded
 | **Tender music**   | **animal**              | 0.622657   |
 | Tender music       | four-frame cartoons     | 0.449074   |
 | Tender music       | horror                  | 0.397024   |
+
+# References
+```
+@misc{guzhov2021audioclip,
+      title={AudioCLIP: Extending CLIP to Image, Text and Audio}, 
+      author={Andrey Guzhov and Federico Raue and Jörn Hees and Andreas Dengel},
+      year={2021},
+      eprint={2106.13043},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD}
+}
+```
 <!---
 ## Extending [CLIP](https://github.com/openai/CLIP) to Image, Text and Audio
 ![Overview of AudioCLIP](images/AudioCLIP-Structure.png)
